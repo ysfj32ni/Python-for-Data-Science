@@ -59,6 +59,8 @@ def encode_morse(text):
 if __name__ == "__main__":
     try:
         assert len(sys.argv) == 2
+        if not sys.argv[1].isalnum():
+            raise AssertionError
         print(encode_morse(sys.argv[1]))
     except AssertionError:
-        print("AssertionError")
+        print("AssertionError: the arguments are bad")
