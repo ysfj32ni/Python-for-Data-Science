@@ -1,6 +1,5 @@
 import sys
 
-
 NESTED_MORSE = {" ": "/",
                 "A": ".-",
                 "B": "-...",
@@ -39,13 +38,12 @@ NESTED_MORSE = {" ": "/",
                 "9": "----.",
                 "0": "-----"}
 
+
 def encode_morse(text):
     """
     Encodes a string into Morse code.
-
     Args:
         text (_str_): The string to encode.
-
     Returns:
         _str_: The Morse code representation of the input string.
     """
@@ -55,6 +53,7 @@ def encode_morse(text):
         if char in NESTED_MORSE:
             morse_code.append(NESTED_MORSE[char.upper()])
     return ' '.join(morse_code)
+
 
 if __name__ == "__main__":
     try:
