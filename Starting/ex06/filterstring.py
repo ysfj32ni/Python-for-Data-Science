@@ -11,7 +11,7 @@ def filter_string(text, length):
     Returns:
         _list_: A list of words that are longer than the specified length.
     """
-    words = text.split(' ')
+    words = text.split(" ")
     return ft_filter(lambda word: len(word) > length, words)
 
 

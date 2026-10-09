@@ -21,7 +21,7 @@ def count_characters(text):
             LowCount += 1
         elif char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~":
             PunctCount += 1
-        elif char == " " or char == '\n':
+        elif char == " " or char == "\n":
             SpaceCount += 1
         elif char.isdigit():
             DigitCount += 1
