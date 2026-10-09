@@ -1,6 +1,14 @@
 import sys
 
 def count_characters(text):
+    
+    """
+        Counts the number of uppercase, lowercase, punctuation, space, and digit characters in a string.
+
+    Returns:
+        __tuple__: A tuple containing the counts of uppercase, lowercase, punctuation, space, and digit characters.
+    """
+    
     UpCount = 0
     LowCount = 0
     PunctCount = 0
